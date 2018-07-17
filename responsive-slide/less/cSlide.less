@@ -1,0 +1,77 @@
+.transForm(@detail){
+  transform: @detail;
+  -moz-transform: @detail;
+  -ms-transform: @detail;
+  -o-transform: @detail;
+  -webkit-transform: @detail;
+}
+
+.mb_slide{display: none;}
+.cSlide_box{
+  width: 100%;
+  overflow: hidden;
+  .cSlide{
+    width: 100%;
+    position: relative;
+    .cSlide_ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      .cSlide_item{
+        float: left;
+        .cSlide_img{
+          width: 100%;
+        }
+      }
+    }
+
+    .cSlide_arrow{
+      width: 5%;
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      cursor: pointer;
+      .transForm(translateY(-50%));
+    }
+    .doLeft{
+      .cSlide_arrow;
+      left: 2%;
+    }
+    .doRight{
+      .cSlide_arrow;
+      right: 2%;
+    }
+
+   .item_point{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      list-style: none;
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      z-index: 3;
+      .transForm(translateX(-50%));
+      li{
+        width: 8px;
+        height: 8px;
+        margin-left: 10px;
+        float: left;
+        cursor: pointer;
+        border-radius: 8px;
+        background: rgba(0,0,0,0.4);
+      }
+      .isSelected{
+        background: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .doLeft,.doRight,.pc_slide{display: none;}
+  .mb_slide{display: block;}
+}
+
+

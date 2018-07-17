@@ -1,0 +1,99 @@
+.mb_slide {
+  display: none;
+}
+.cSlide_box {
+  width: 100%;
+  overflow: hidden;
+}
+.cSlide_box .cSlide {
+  width: 100%;
+  position: relative;
+}
+.cSlide_box .cSlide .cSlide_ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.cSlide_box .cSlide .cSlide_ul .cSlide_item {
+  float: left;
+}
+.cSlide_box .cSlide .cSlide_ul .cSlide_item .cSlide_img {
+  width: 100%;
+}
+.cSlide_box .cSlide .cSlide_arrow {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.cSlide_box .cSlide .doLeft {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 2%;
+}
+.cSlide_box .cSlide .doRight {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: 2%;
+}
+.cSlide_box .cSlide .item_point {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  z-index: 3;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.cSlide_box .cSlide .item_point li {
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  float: left;
+  cursor: pointer;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.cSlide_box .cSlide .item_point .isSelected {
+  background: #fff;
+}
+@media screen and (max-width: 750px) {
+  .doLeft,
+  .doRight,
+  .pc_slide {
+    display: none;
+  }
+  .mb_slide {
+    display: block;
+  }
+}
+/*# sourceMappingURL=cSlide.css.map */
