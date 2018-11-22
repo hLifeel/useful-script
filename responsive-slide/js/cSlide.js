@@ -106,7 +106,7 @@ $(function(){
             for (let n = 0; n < slideArray[i].count; n++) {
                 $('.item_point'+i).append('<li data-point="'+n+'"></li>')
             }
-            $('.item_point'+i+'>li').eq(0).addClass('isSelected');
+            $('.item_point'+i+'>li').eq(0).addClass('isSelected').css('margin-left',0);
 
             setBasicData(i);
             //开始轮播
